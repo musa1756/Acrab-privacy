@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Политика конфиденциальности — Acrab</title>
+  <style>
+    :root {
+      --gold: #C8A96E;
+      --bg: #0D0F14;
+      --surface: #161A23;
+      --border: rgba(200,169,110,0.15);
+      --text: #E8E0D5;
+      --muted: #8A8275;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 0 80px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .arabic {
+      font-size: 48px;
+      font-family: Georgia, serif;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    p {
+      color: #B0A898;
+      margin-bottom: 10px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      color: #B0A898;
+      padding: 4px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '•';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <span class="arabic">عَقْرَب</span>
+      <h1>Политика конфиденциальности</h1>
+      <p class="subtitle">Последнее обновление: апрель 2026 г.</p>
+    </div>
+
+    <div class="card">
+      <h2>Общие сведения</h2>
+      <p>Acrab (عَقْرَب) — iOS-приложение для изучения арабского языка. Мы серьёзно относимся к вашей конфиденциальности и стараемся собирать минимум данных, необходимых для работы приложения.</p>
+    </div>
+
+    <div class="card">
+      <h2>Какие данные собираются</h2>
+      <p><strong style="color: var(--text);">Локально на устройстве:</strong></p>
+      <ul>
+        <li>Имя пользователя (по желанию)</li>
+        <li>Уровень арабского языка и учебные цели</li>
+        <li>История чата с ИИ-ассистентом</li>
+        <li>Прогресс: выученные слова, XP, серии дней</li>
+        <li>Флешкарты, темы, аудиозаписи, сохранённые слова</li>
+        <li>Настройки приложения</li>
+      </ul>
+      <p style="margin-top: 14px;"><strong style="color: var(--text);">Через серверы:</strong></p>
+      <ul>
+        <li>Текст сообщений — для получения ответов от ИИ-сервисов</li>
+        <li>Данные авторизации — при входе через Apple или Google</li>
+        <li>Статус подписки</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Разрешения устройства</h2>
+      <ul>
+        <li><strong style="color: var(--text);">Микрофон</strong> — только при голосовом вводе в «Практике». Записи не сохраняются на наших серверах.</li>
+        <li><strong style="color: var(--text);">Камера</strong> — только для OCR-распознавания арабского текста в «Ташкиле». Фото не передаются третьим лицам.</li>
+        <li><strong style="color: var(--text);">Распознавание речи</strong> — Apple Speech Recognition, обработка на устройстве.</li>
+        <li><strong style="color: var(--text);">Фотогалерея</strong> — только для сохранения изображений флешкарт по запросу пользователя.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Сторонние сервисы</h2>
+      <p>Для работы приложения используются внешние сервисы:</p>
+      <ul>
+        <li><strong style="color: var(--text);">Google Gemini API</strong> — ИИ-ответы в чате</li>
+        <li><strong style="color: var(--text);">OpenRouter</strong> — обработка текста (переводы, нормализация)</li>
+        <li><strong style="color: var(--text);">Mistral AI</strong> — синтез речи (TTS)</li>
+        <li><strong style="color: var(--text);">Supabase</strong> — авторизация и управление подпиской</li>
+        <li><strong style="color: var(--text);">YooKassa</strong> — обработка платежей</li>
+      </ul>
+      <p style="margin-top: 10px;">Текст сообщений передаётся ИИ-сервисам исключительно для формирования ответов и не используется в других целях.</p>
+    </div>
+
+    <div class="card">
+      <h2>Авторизация</h2>
+      <p>Приложение поддерживает вход через Apple ID и Google. Мы получаем только идентификатор пользователя и, при наличии разрешения, имя. Пароли не хранятся в приложении. Данные авторизации защищены iOS Keychain.</p>
+    </div>
+
+    <div class="card">
+      <h2>Хранение и безопасность</h2>
+      <p>Большинство данных хранится локально на вашем устройстве. Все сетевые запросы выполняются через HTTPS. Мы не продаём и не передаём персональные данные третьим лицам в маркетинговых целях.</p>
+    </div>
+
+    <div class="card">
+      <h2>Дети</h2>
+      <p>Приложение не предназначено для детей до 13 лет. Мы сознательно не собираем данные о детях.</p>
+    </div>
+
+    <div class="card">
+      <h2>Изменения политики</h2>
+      <p>Мы можем обновлять эту политику. При существенных изменениях уведомим через приложение. Дата последнего обновления указана вверху страницы.</p>
+    </div>
+
+    <div class="card">
+      <h2>Связаться с нами</h2>
+      <p>Если у вас есть вопросы о конфиденциальности, напишите нам: <a href="mailto:support@acrab.app">support@acrab.app</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Acrab · Все права защищены</p>
+    </div>
+
+  </div>
+</body>
+</html>
